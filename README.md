@@ -30,30 +30,40 @@ yarn lint
 
 ## 文件结构
 
-## /config
+### config
 
 配置项
 
-- /post.js
-  axios 请求封装文件
-- /path.js
+- path.js
   请求服务器的正式和测试环境路径配置
-- /server.js
+- server.js
   后台接口路径配置
+- post.js
+  axios 请求封装文件
+- dev.env.js prod.env.js
+  配置打包环境
 
-## /utils
+### utils
 
 组件配置
 
-- /element-ui.js
+- element-ui.js
   element 组件按需加载
-- /utils.js
-  自定义插件
+- utils.js
+  自定义功能
 
-## 访问本地文件
+### 访问本地项目文件
 
 本地文件夹启动项目后访问
-通过 serve 启动允许跨域访问 --cors
+
+- 全局安装 serve
+
+```command
+yarn global add serve
+```
+
+- 进入项目文件夹，通过 serve 启动
+  允许跨域访问，启动时增加 --cors
 
 ```command
 serve --cors

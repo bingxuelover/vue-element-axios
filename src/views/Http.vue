@@ -41,7 +41,7 @@
   };
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
   .box {
     margin: 100px 0;
   }
